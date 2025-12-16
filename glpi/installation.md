@@ -297,9 +297,74 @@ Após aplicar as alterações, reinicia o Apache:
 ```bash
 systemctl restart apache2
 ```
+## 11. Assistente de instalação via Web (Web Installation Wizard)
+
+Abrir um browser e aceder ao GLPI através do endereço do servidor. De seguida, seguir os passos do assistente de instalação.
+
+http://<ip_do_servidor>/
+
+### 11.1 Seleção do idioma
+
+No primeiro ecrã do assistente, seleciona o idioma pretendido e confirma para dar início ao processo de instalação.
+
+![Seleção do idioma no assistente de instalação](../images/glpi-installation/image.png)
 
 
+### 11.2 Verificação de compatibilidade do ambiente 
+Após confirmar o idioma, o GLPI apresenta uma página de verificação automática do ambiente. Nesta etapa são validados os requisitos necessários ao correto funcionamento da aplicação, incluindo versões do PHP, extensões obrigatórias, permissões de diretórios e configurações de segurança.
 
+Caso todos os testes sejam concluídos com sucesso, é possível prosseguir com a instalação. Se algum requisito falhar, deverá ser corrigido antes de continuar.
 
+![Verificação de compatibilidade do ambiente](../images/glpi-installation/imagemverificar.png)
+
+### 11.3 Configuração da base de dados
+
+Neste passo devem ser introduzidas as credenciais da base de dados criadas
+anteriormente. Na maioria dos cenários, o servidor será `localhost`.
+
+- Servidor SQL (MariaDB/MySQL): `localhost`
+- Utilizador: `glpi`
+- Palavra-passe: *(conforme definida na criação do utilizador)*
+- Base de dados: `glpi`
+
+![Configuração da ligação à base de dados](../images/glpi-installation/wizard-db-connection.png)
+
+> [!NOTE]
+>  Use the following credentials created earlier on database creation.
+
+| Perfil | Utilizador | Palavra-passe |
+|---|---|---|
+| Super-Admin | `glpi` | `glpi` |
+| Tech | `tech` | `tech` |
+| Normal | `normal` | `normal` |
+| Post-only | `post-only` | `postonly` |
+
+> [!WARNING]
+> Altera as palavras-passe por defeito imediatamente após o primeiro login.
+> 
+## 12. Checklist pós-instalação
+
+Após concluir o assistente de instalação, recomenda-se validar os seguintes pontos.
+
+### 12.1 Remover o script de instalação
+
+Por motivos de segurança, remove o ficheiro do instalador:
+
+```bash
+rm /var/www/html/glpi/install/install.php
+```
+13.2 Reiniciar o Apache
+
+```bash
+systemctl restart apache2
+```
+
+### 12.3 Ações recomendadas
+
+Alterar todas as palavras-passe por defeito dos utilizadores do GLPI.
+
+Confirmar permissões e ownership dos diretórios do GLPI.
+
+Validar acesso à interface web e funcionamento geral (login, criação de ticket, etc.).
 
 
