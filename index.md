@@ -22,7 +22,7 @@ e modular:
 
 ### GLPI
 - [Guia de Instalação do GLPI](glpi/installation.md)
-- Guia de Inventário de Ativos
+- [Guia de Inventário de Ativos](glpi/inventario-ativos.md)
 - Regras de Negócio
 - SLAs e Automatismos
 
