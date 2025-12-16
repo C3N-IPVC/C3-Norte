@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="images/logoCCCNorte.png" alt="C-Network CCC-Norte" width="260">
+</p>
+
+---
 # CCC-Norte — Documentação Técnica
 
 Este repositório centraliza a documentação técnica utilizada na implementação,
@@ -16,11 +21,10 @@ e modular:
 
 ### GLPI
 - [Guia de Instalação do GLPI](glpi/installation.md)
-<!--
 - Guia de Inventário de Ativos
 - Regras de Negócio
 - SLAs e Automatismos
--->
+
 
 ### Integrações (em desenvolvimento)
 - Wazuh (SIEM / HIDS)
