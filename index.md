@@ -1,9 +1,10 @@
-<p align="center">
-  <img src="images/logoCCCNorte.png" alt="C-Network CCC-Norte" width="260">
-</p>
+<div style="display:flex; align-items:center; gap:20px;">
+  <img src="images/logoCCCNorte.png" alt="C-Network CCC-Norte" width="120">
+  <h1>CCC-Norte — Documentação Técnica</h1>
+</div>
 
----
-# CCC-Norte — Documentação Técnica
+<hr>
+
 
 Este repositório centraliza a documentação técnica utilizada na implementação,
 configuração e operação das plataformas tecnológicas do projeto **CCC-Norte**.
