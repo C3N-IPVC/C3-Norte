@@ -1,8 +1,45 @@
-# CCC-Norte — Documentação Técnica GLPI
+# CCC-Norte — Documentação Técnica
 
-Esta documentação reúne os principais guias técnicos usados na implementação
-e operação do GLPI no âmbito do projeto CCC-Norte.
+Este repositório centraliza a documentação técnica utilizada na implementação,
+configuração e operação das plataformas tecnológicas do projeto **CCC-Norte**.
 
-## Guias
-- [Instalação do GLPI](glpi/installation.md)
+A documentação aqui presente destina-se a equipas técnicas e administrativas,
+servindo como referência para instalação, configuração, manutenção e boas
+práticas das soluções adotadas.
 
+---
+
+## Plataformas documentadas
+
+A documentação está organizada por ferramenta, permitindo uma navegação clara
+e modular:
+
+### GLPI
+- [Guia de Instalação do GLPI](glpi/installation.md)
+<!--
+- Guia de Inventário de Ativos
+- Regras de Negócio
+- SLAs e Automatismos
+-->
+
+### Integrações (em desenvolvimento)
+- Wazuh (SIEM / HIDS)
+- Zabbix (Monitorização)
+- Outras integrações futuras
+
+---
+
+## Estrutura da documentação
+
+Cada guia segue uma abordagem técnica e prática:
+- Passos claros e sequenciais
+- Exemplos reais de configuração
+- Separação entre instalação, configuração e operação
+- Boas práticas de segurança e manutenção
+
+---
+
+## Âmbito
+
+Esta documentação é específica ao contexto do **CCC-Norte**, podendo no entanto
+servir como base de referência para implementações semelhantes noutros ambientes.
