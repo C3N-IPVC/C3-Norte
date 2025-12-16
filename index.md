@@ -23,7 +23,7 @@ e modular:
 ### GLPI
 - [Guia de Instalação do GLPI](glpi/installation.md)
 - [Guia de Inventário de Ativos](glpi/inventario-ativos.md)
-- Regras de Negócio
+- Business Rules for Tickets
 - SLAs e Automatismos
 
 
