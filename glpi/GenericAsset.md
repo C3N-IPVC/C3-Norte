@@ -4,7 +4,7 @@
 
 Este guia descreve o processo de criação e gestão de **Assets Genéricos ** no **GLPI 11**, com o objetivo de garantir a inventariação consistente de serviços expostos à Internet, a normalização da informação e a conformidade com os requisitos da **CNCS / QNR**.
 
-D
+
 ---
 
 ## Pré-requisitos
@@ -20,9 +20,11 @@ D
 
 ## Passo 1 – Criar a Definição do Asset “Website”
 
-> **Nota para imagem:**  
-> Screenshot do caminho  
-> `Setup → Asset Definitions → + Add`
+<p align="center">
+  
+  <img src="../images/glpi-generic/1path.png" alt="Criar a Definição do Asset “Website”">
+  
+</p>
 
 1. Aceder a **Setup → Asset Definitions**
 2. Selecionar **+ Add**
@@ -33,8 +35,11 @@ D
    - *(Opcional)* Selecionar um ícone representativo
 4. Clicar em **Add**
 
-> **Nota para imagem:** Screenshot do formulário de criação preenchido
-
+<p align="center">
+  
+  <img src="../images/glpi-generic/2exemplo.png" alt="Criar a Definição do Asset “Website”">
+  
+</p>
 ---
 
 ## Passo 2 – Configurar os Campos (*Fields*)
@@ -43,7 +48,6 @@ Após a criação, abrir a definição **Website** e aceder ao separador **Field
 
 O objectivo é manter apenas os campos necessários, alinhados com os requisitos da **CNCS**, garantindo simplicidade e consistência.
 
-> **Nota para imagem:** Screenshot do separador **Fields**
 
 ### Campos recomendados
 
@@ -65,7 +69,6 @@ Remover ou desactivar todos os campos que não acrescentem valor para este tipo 
 - Inventory
 - Campos financeiros ou de ciclo de vida
 
-> **Nota para imagem:** Screenshot evidenciando campos removidos
 
 ---
 
@@ -80,16 +83,17 @@ Organizar os campos pela seguinte ordem, de acordo com o formato **CNCS QNR**:
 5. FQDN (se aplicável)  
 6. Fabricante  
 
-> **Nota para imagem:** Screenshot da ordenação dos campos (drag & drop)
+<p align="center">
+  
+  <img src="../images/glpi-generic/image.png" alt=" Organizar a Ordem dos Campos”">
+  
+</p>
 
 No final, clicar em **Save**.
 
 ---
 
 ## Passo 4 – Adicionar Assets do Tipo Website
-
-> **Nota para imagem:** Screenshot do menu  
-> `Assets → Website → + Add`
 
 1. Aceder a **Assets → Website**
 2. Selecionar **+ Add**
@@ -103,7 +107,6 @@ No final, clicar em **Save**.
 |-----------------------|------------------|------------------|--------------------|----------------------|------------|
 | Website Institucional | WordPress        | 6.4.1            | 193.136.xxx.xxx    | www.exemplo.pt       | Open Source |
 
-> **Nota para imagem:** Screenshot de um Asset Website preenchido
 
 Cada Website exposto à Internet deve ser registado como **um Asset independente**.
 
@@ -111,8 +114,6 @@ Cada Website exposto à Internet deve ser registado como **um Asset independente
 
 ## Passo 5 – Exportar Assets para a CNCS
 
-> **Nota para imagem:** Screenshot da opção  
-> **Export → CSV**
 
 1. Aceder a **Assets → Website**
 2. Selecionar **Export → CSV**
