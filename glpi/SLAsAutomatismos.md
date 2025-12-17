@@ -41,7 +41,12 @@ Após aceder ao menu **Setup → Service levels → SLAs**, deve ser criado um n
 
 Este ecrã apresenta a lista de SLAs existentes no sistema, permitindo criar novos acordos de nível de serviço ou editar os já definidos.
 
-aaaaaaaa
+<p align="center">
+  
+  <img src="../images/glpi-SLA/1criarSLA.png" alt="Passos para criação de um SLA" >
+  
+</p>
+
 ---
 
 ### Definição do SLA (Service Level)
@@ -59,7 +64,12 @@ Ao criar ou editar um SLA, devem ser definidos os seguintes parâmetros principa
 
 Esta configuração define o enquadramento geral do SLA, mas não estabelece ainda tempos concretos.
 
-> **Nota para imagem:** Screenshot do formulário de criação/edição do SLA com Nome, Calendar e Comments.
+<p align="center">
+  
+  <img src="../images/glpi-SLA/2Info.png" alt="Definição do SLA (Service Level)" >
+  
+</p>
+
 
 ---
 
@@ -81,7 +91,11 @@ Cada OLA especifica:
 
 Esta separação permite controlar internamente o desempenho de cada equipa, independentemente do SLA global.
 
-> **Nota para imagem:** Screenshot da secção OLAs com diferentes linhas/equipas configuradas.
+<p align="center">
+  
+  <img src="../images/glpi-SLA/3OLAS.png" alt="Configuração de OLA" >
+  
+</p>
 
 ---
 
@@ -102,7 +116,11 @@ Para cada entrada de SLA devem ser configurados:
 
 Estes tempos são os que serão referenciados diretamente nas **Business Rules**, sendo automaticamente aplicados aos tickets quando a regra correspondente for acionada.
 
-> **Nota para imagem:** Screenshot da tabela de tempos (Time to own / Time to resolve) do SLA.
+<p align="center">
+  
+  <img src="../images/glpi-SLA/4SLAS.png" alt="Configuração dos tempos de SLA" >
+  
+</p>
 
 ---
 
@@ -116,13 +134,14 @@ No contexto deste guia, o Ticket Template é utilizado para normalizar a criaç�
 
 Para criar ou gerir Ticket Templates, seguir o caminho:
 
-Assistance → Tickets → Ticket templates
+***Assistance → Tickets → Ticket templates***
 
 Neste ecrã é apresentada a lista de templates existentes, bem como a opção para criação de novos templates.
 
+AAAAAAAAA
+
 Após selecionar **Add**, deve ser criado o template com um nome claro e identificativo (ex.: **Incidente Crítico CNCS**).
 
-> **Nota para imagem:** Screenshot da lista de Ticket Templates e do botão **Add**.
 
 ---
 
@@ -180,14 +199,14 @@ Neste modelo de automação, as ITIL Categories assumem um papel fundamental, um
 
 Para criar ou gerir ITIL Categories, seguir o caminho:
 
-Setup → Dropdowns → ITIL categories
+***Setup → Dropdowns → ITIL categories***
 
 Neste ecrã é possível consultar a hierarquia existente e criar novas categorias.
 
 
 <p align="center">
   
-  <img src="../images/glpi-inventario/9ITLCATEGORIES.png" alt="Configuração das ITIL Categories" >
+  <img src="../images/glpi-SLA/9ITLCATEGORIES.png" alt="Configuração das ITIL Categories" >
   
 </p>
 
