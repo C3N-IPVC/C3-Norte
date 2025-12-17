@@ -156,7 +156,11 @@ Neste ecrã é também possível definir os **Allowed statuses**, ou seja, os es
 
 Esta definição é útil para garantir consistência no fluxo de tratamento (ex.: permitir *New*, *Processing*, *Pending* e *Solved*, mas controlar o uso indevido em estados específicos).
 
-> **Nota para imagem:** Screenshot do template com a secção **Allowed statuses**.
+<p align="center">
+  
+  <img src="../images/glpi-SLA/8TemplateINICIO.png" alt="Allowed statuses" >
+  
+</p>
 
 ---
 
@@ -170,7 +174,11 @@ O objetivo é garantir que:
 - não existe abertura de incidentes críticos sem dados essenciais;
 - a qualidade da informação é uniforme independentemente do utilizador.
 
-> **Nota para imagem:** Screenshot do separador **Mandatory fields** com campos selecionados.
+<p align="center">
+  
+  <img src="../images/glpi-SLA/9Mandatory.png" alt="Mandatory fields" >
+  
+</p>
 
 ---
 
@@ -190,7 +198,12 @@ Exemplos de campos frequentemente definidos nesta secção:
 
 Ao utilizar **Predefined fields**, assegura-se que o ticket fica consistente desde o início, mesmo quando é criado automaticamente por **Email** ou **API**.
 
-> **Nota para imagem:** Screenshot do separador **Predefined fields** com valores preenchidos.
+<p align="center">
+  
+  <img src="../images/glpi-SLA/10Predifined.png" alt="Predefined fields" >
+  
+</p>
+
 
 ---
 
