@@ -21,13 +21,14 @@ Aceder a `Administration > Entities` e confirmar que existe uma entidade princip
 Em `Setup > Dropdowns > Locations`, criar uma hierarquia lógica de localizações (ex.: Campus > Edifício > Piso > Sala). Esta informação será utilizada para associar corretamente os ativos.
 
 **Exemplo Prático**  
-![Entidades](../images/glpi-inventario/localizacao.png)   
+![Localizações
+](../images/glpi-inventario/localizacao.png)   
 
 ### 1.3 Redes (IP Networks)
 
 Em `Setup > Administration > GLPI Inventory > IP Ranges`, definir as gamas de IP que serão utilizadas nos scans de rede. Cada rede deve conter o endereço base e a máscara correta.
 
-![Entidades](../images/glpi-inventario/iprange.jpg)   
+![Redes](../images/glpi-inventario/iprange.jpg)   
 
 ---
 
@@ -39,7 +40,10 @@ Aceder a `Administration > Inventory` e confirmar que o inventário está ativo 
 
 **Nota:** É possível definir a entidade à qual o utilizador pretende definir os ativos.
 
-![Entidades](../images/glpi-inventario/inventariomenu.jpg)   
+  
+![ Ativação do módulo GLPI Inventory](../images/glpi-inventario/inventariomenu.jpg)   
+
+
 
 ---
 
@@ -52,7 +56,7 @@ Instalar o agente no servidor GLPI ou noutra máquina da rede que tenha acesso �
 >[!Warning]
 >Em caso de dúvidas, verificar aba sobre instalação do Agente em ambiente Windows ou Linux.
 
-![Entidades](../images/glpi-inventario/agentglpi.png)  
+![Instalação e validação do GLPI Agent](../images/glpi-inventario/agenteglpi.png)  
 
 ---
 
@@ -66,6 +70,10 @@ Recomenda-se ativar a opção **“Permit to re-prepare task after run”**, per
 
 📌 Inserir imagem aqui: Task management (Add / criação da task)
 
+ ![Criação da Task de Network Discovery](../images/glpi-inventario/taskdiscoverycreate)  
+ 
+ ![Criação da Task de Network Discovery](../images/glpi-inventario/taskdiscoverycreate) 
+ 
 ---
 
 ## 4.1 Configuração do Job de Network Discovery
