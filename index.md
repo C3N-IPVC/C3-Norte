@@ -1,6 +1,6 @@
-<div style="display:flex; align-items:center; gap:20px;">
-  <img src="images/logoCCCNorte.png" alt="C-Network CCC-Norte" width="120">
-  <h1>CCC-Norte — Documentação Técnica</h1>
+<div style="display:flex; align-items:center; gap:60px;">
+  <img src="images/logoCCCNorte.png" alt="C-Network CCC-Norte" width="240">
+  <h1> Documentação Técnica</h1>
 </div>
 
 <hr>
