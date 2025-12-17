@@ -66,13 +66,13 @@ O Network Discovery é o primeiro passo do inventário automático. Este process
 
 Aceder a `Administration > GLPI Inventory > Tasks > Task management` e criar uma nova task. Atribuir um nome claro e identificável (ex.: Network Discovery – LAN Principal).
 
-Recomenda-se ativar a opção **“Permit to re-prepare task after run”**, permitindo reutilizar a task no futuro.
+>[!Note]
+>Recomenda-se ativar a opção **“Permit to re-prepare task after run”**, permitindo reutilizar a task no futuro.
 
-📌 Inserir imagem aqui: Task management (Add / criação da task)
 
- ![Criação da Task de Network Discovery](../images/glpi-inventario/taskdiscoverycreate)  
+ ![Criação da Task de Network Discovery](../images/glpi-inventario/taskdiscoverycreate.png)  
  
- ![Criação da Task de Network Discovery](../images/glpi-inventario/taskdiscoverycreate) 
+ ![Criação da Task de Network Discovery](../images/glpi-inventario/taskdiscoverysettings.png) 
  
 ---
 
@@ -82,28 +82,34 @@ Após criar a task, é necessário configurar o Job associado, onde se definem o
 
 Em **Job configuration**, criar uma nova ação e selecionar o método **“Network discovery”**. Este método permite identificar dispositivos ativos por IP.
 
-Definir o **Actor (Agente)**, selecionando o agente previamente instalado. O agente é responsável por executar o scan.
-
-📌 Inserir imagem aqui: Job configuration (Module method = Network discovery)
+ ![Configuração do Job de Network Discovery](../images/glpi-inventario/taskdiscoveryNetwork.png) 
 
 ### Targets e validação do estado
 
+Definir o **Actor (Agente)**, selecionando o agente previamente instalado. O agente é responsável por executar o scan.
+
+ ![Targets e validação do estado](../images/glpi-inventario/taskdiscoveryAgent.png) 
+
 Definir o **Target (IP Range)**, selecionando a gama de IP criada anteriormente. Após adicionar o target, clicar em **Update** até que o estado fique corretamente associado.
+
+ ![Targets e validação do estado](../images/glpi-inventario/taskdiscoveryTarget.png) 
 
 Depois de adicionar tanto o target como o agent, é necessário clicar em **Update** para que as configurações sejam guardadas e o estado de ambos muda de amarelo para azul, confirmando o sucesso da associação.
 
-📌 Inserir imagem aqui: Targets/Actors (amarelo → azul após Update)
-
+  ![Targets e validação do estado](../images/glpi-inventario/taskdiscoveryAgentTarget.jpg)
+  
 ---
 
 ## 6. Execução do Network Discovery
 
 Com a task configurada, ativar a opção **Active** (menu inicial), guardar a configuração e iniciar o processo com **Force start**. O estado da task irá evoluir de **Prepared** para **Running**.
 
+ ![Execução do Network Discovery](../images/glpi-inventario/TaskRunDiscovery.png) 
+
 Quando o processo termina, o estado muda para **Successful** ou **In error**, indicando se o scan foi concluído com sucesso ou se ocorreu algum problema.
 
-📌 Inserir imagem aqui: execução da task (Prepared/Running/Successful)
-
+ ![Execução do Network Discovery](../images/glpi-inventario/TaskRunDiscoveryEnd.png) 
+ 
 ---
 
 ## 7. Análise de Unmanaged Assets
@@ -112,7 +118,7 @@ Após a execução do Network Discovery, os dispositivos encontrados surgem na s
 
 É obrigatório analisar cada ativo e movê-lo manualmente para a categoria correta, como **Network devices** (switches, routers, firewalls) ou **Printers**.
 
-📌 Inserir imagem aqui: Unmanaged Assets (lista / mover para categoria)
+ ![Análise de Unmanaged Assets](../images/glpi-inventario/TaskUnmanaged.jpg) 
 
 ---
 
@@ -122,7 +128,9 @@ O Network Inventory via SNMP permite recolher informação detalhada dos equipam
 
 Criar uma nova ação com o método **“Network inventory (SNMP)”**, definir os targets adequados e executar a task de forma semelhante ao Network Discovery realizado nas etapas acima definidas.
 
-📌 Inserir imagem aqui: criação ação SNMP (Network inventory - SNMP)
+ ![Inventário detalhado via SNMP](../images/glpi-inventario/Tasksmnp.png) 
+ 
+![Análise de Unmanaged Assets](../images/glpi-inventario/tasksnmpfinal.png) 
 
 ---
 
@@ -132,4 +140,3 @@ No final do processo, confirmar que os ativos estão corretamente classificados,
 
 Este inventário constitui a base para a gestão de tickets, monitorização e relatórios no GLPI.
 
-📌 Inserir imagem aqui: validação final (tasks successful / inventário completo)
