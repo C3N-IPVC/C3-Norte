@@ -15,7 +15,12 @@ Aceder a `Administration > Entities` e confirmar que existe uma entidade princip
 **Exemplo Prático**  
 ![Entidades](../images/glpi-inventario/inventario.png)
 
-\\\\\\\\\\![Entidades](../images/glpi-inventario/inventarioex.png)   
+<p align="center">
+  
+  <img src="../images/glpi-inventario/inventarioex.png" alt="Entidades" width="900">
+  
+</p>
+
 ### 1.2 Localizações
 
 Em `Setup > Dropdowns > Locations`, criar uma hierarquia lógica de localizações (ex.: Campus > Edifício > Piso > Sala). Esta informação será utilizada para associar corretamente os ativos.
@@ -28,7 +33,11 @@ Em `Setup > Dropdowns > Locations`, criar uma hierarquia lógica de localizaçõ
 
 Em `Setup > Administration > GLPI Inventory > IP Ranges`, definir as gamas de IP que serão utilizadas nos scans de rede. Cada rede deve conter o endereço base e a máscara correta.
 
-![Redes](../images/glpi-inventario/iprange.jpg)   
+<p align="center">
+  
+  <img src="../images/glpi-inventario/iprange.jpg" alt="Redes" width="900">
+  
+</p>
 
 ---
 
@@ -40,9 +49,12 @@ Aceder a `Administration > Inventory` e confirmar que o inventário está ativo 
 
 **Nota:** É possível definir a entidade à qual o utilizador pretende definir os ativos.
 
-  
-![ Ativação do módulo GLPI Inventory](../images/glpi-inventario/inventariomenu.jpg)   
 
+<p align="center">
+  
+  <img src="../images/glpi-inventario/inventariomenu.jpg" alt="Ativação do módulo GLPI Inventory" width="900">
+  
+</p>
 
 
 ---
@@ -96,20 +108,34 @@ Definir o **Target (IP Range)**, selecionando a gama de IP criada anteriormente.
 
 Depois de adicionar tanto o target como o agent, é necessário clicar em **Update** para que as configurações sejam guardadas e o estado de ambos muda de amarelo para azul, confirmando o sucesso da associação.
 
-  ![Targets e validação do estado](../images/glpi-inventario/taskdiscoveryAgentTarget.jpg)
+<p align="center">
+  
+  <img src="../images/glpi-inventario/taskdiscoveryAgentTarget.jpg" alt="Targets e validação do estado" width="900">
+  
+</p>
+
   
 ---
 
 ## 6. Execução do Network Discovery
 
 Com a task configurada, ativar a opção **Active** (menu inicial), guardar a configuração e iniciar o processo com **Force start**. O estado da task irá evoluir de **Prepared** para **Running**.
-
- ![Execução do Network Discovery](../images/glpi-inventario/TaskRunDiscovery.png) 
+ 
+ <p align="center">
+  
+  <img src="../images/glpi-inventario/TaskRunDiscovery.png" alt="Execução do Network Discovery" width="900">
+  
+</p>
 
 Quando o processo termina, o estado muda para **Successful** ou **In error**, indicando se o scan foi concluído com sucesso ou se ocorreu algum problema.
 
- ![Execução do Network Discovery](../images/glpi-inventario/TaskRunDiscoveryEnd.png) 
- 
+
+  <p align="center">
+  
+  <img src="../images/glpi-inventario/TaskRunDiscoveryEnd.png" alt="Execução do Network Discovery" width="900">
+  
+</p>
+
 ---
 
 ## 7. Análise de Unmanaged Assets
@@ -118,7 +144,11 @@ Após a execução do Network Discovery, os dispositivos encontrados surgem na s
 
 É obrigatório analisar cada ativo e movê-lo manualmente para a categoria correta, como **Network devices** (switches, routers, firewalls) ou **Printers**.
 
- ![Análise de Unmanaged Assets](../images/glpi-inventario/TaskUnmanaged.jpg) 
+   <p align="center">
+  
+  <img src="../images/glpi-inventario/TaskUnmanaged.jpg" alt="Análise de Unmanaged Assets" width="900">
+  
+</p>
 
 ---
 
@@ -130,7 +160,11 @@ Criar uma nova ação com o método **“Network inventory (SNMP)”**, definir 
 
  ![Inventário detalhado via SNMP](../images/glpi-inventario/Tasksmnp.png) 
  
-![Análise de Unmanaged Assets](../images/glpi-inventario/tasksnmpfinal.png) 
+  <p align="center">
+  
+  <img src="../images/glpi-inventario/tasksnmpfinal.png" alt="Inventário detalhado via SNMP" width="900">
+  
+</p>
 
 ---
 
