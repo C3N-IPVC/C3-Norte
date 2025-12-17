@@ -62,7 +62,7 @@ Neste menu é possível:
   
 <p align="center">
   
-  <img src="../images/glpi-business/2menuticket.jpg" alt="Aceder ao Módulo de Business Rules" width="900">
+  <img src="../images/glpi-business/2menuticket.png" alt="Aceder ao Módulo de Business Rules">
   
 </p>
 
@@ -80,8 +80,19 @@ No ecrã de regras, clicar em **“Add”** para criar uma nova Business Rule.
 
 - **Descrição**  
   Recomendada para documentar claramente o propósito da regra
+<p align="center">
+  
+  <img src="../images/glpi-business/3criarticket.png" alt="Criação de uma Nova Business Rule">
+  
+</p>
 
-*(Inserir imagem do ecrã de criação da regra)*
+Exemplo :
+
+<p align="center">
+  
+  <img src="../images/glpi-business/4exemploticket.png" alt="Criação de uma Nova Business Rule">
+  
+</p>
 
 ---
 
@@ -93,8 +104,15 @@ Podem ser utilizados vários critérios em simultâneo, permitindo um controlo m
 
 ### Critérios frequentemente utilizados
 
-- **Subject contém determinada palavra-chave** *(Importante)*  
+- **Subject contém determinada palavra-chave** *(Importante)*
 
+<p align="center">
+  
+  <img src="../images/glpi-business/5defenicaocriterio.png" alt="Critérios frequentemente utilizados">
+  
+</p>
+
+>[!NOTE]
   > A utilização de expressões regulares (regex) no campo *Subject* permite identificar automaticamente variações do mesmo tipo de alerta, mesmo quando o texto do e-mail sofre pequenas alterações.  
   >  
   > Esta abordagem aumenta a eficácia da deteção, reduz falsos negativos e torna as regras mais robustas, sendo especialmente útil em alertas técnicos e de segurança gerados por diferentes sistemas.  
@@ -103,13 +121,32 @@ Podem ser utilizados vários critérios em simultâneo, permitindo um controlo m
 
 - **Corpo do ticket contém termos técnicos**
 
+  <p align="center">
+  
+  <img src="../images/glpi-business/6termotecnico.png" alt="Critérios frequentemente utilizados">
+  
+</p>
+
 - **Email do remetente**
 
+  <p align="center">
+  
+  <img src="../images/glpi-business/7emailreceveiver.png" alt="Critérios frequentemente utilizados">
+  
+</p>
+
 - **Entidade associada**
+  
+  <p align="center">
+  
+  <img src="../images/glpi-business/8entidadeassociada.png" alt="Critérios frequentemente utilizados">
+  
+</p>
 
-Recomenda-se a utilização de critérios específicos para evitar classificações incorretas ou atribuições erradas.
+>[!Warning]
+>Recomenda-se a utilização de critérios específicos para evitar classificações incorretas ou atribuições erradas.
 
-*(Inserir imagem da definição de critérios)*
+
 
 ---
 
@@ -119,14 +156,45 @@ As ações são executadas quando **todos os critérios da regra são cumpridos*
 
 ### Ações mais utilizadas em Business Rules de tickets
 
-- **Definir categoria do ticket** *(Importante)*  
-- **Atribuir grupo técnico**  
-- **Definir prioridade**  
-- **Definir impacto ou urgência**
+- **Definir categoria do ticket** *(Importante)*
+- 
+   <p align="center">
+  
+  <img src="../images/glpi-business/9categoriaassociada.png" alt="Definição das Ações ">
+    
+   </p>
+
+- **Atribuir grupo técnico**
+   <p align="center">
+  
+  <img src="../images/glpi-business/10grupo.png" alt="Definição das Ações ">
+    
+   </p>
+   
+- **Definir prioridade**
+ <p align="center">
+  
+  <img src="../images/glpi-business/11prioridade.png" alt="Definição das Ações ">
+    
+   </p>
+   
+
+- **Definir impacto**
+   <p align="center">
+  
+  <img src="../images/glpi-business/12impacto.png" alt="Definição das Ações ">
+    
+   </p>
+   
+- **Definir urgência**
+   <p align="center">
+  
+  <img src="../images/glpi-business/13urgencia.png" alt="Definição das Ações ">
+    
+   </p>
 
 Uma regra pode conter múltiplas ações, que são aplicadas em simultâneo.
 
-*(Inserir imagem da definição das ações)*
 
 ---
 
@@ -142,7 +210,6 @@ A ordem das regras influencia diretamente o resultado final.
 - Evitar regras redundantes ou sobrepostas  
 - Documentar claramente a finalidade de cada regra
 
-*(Inserir imagem da lista de regras e respetiva ordem)*
 
 ---
 
@@ -151,6 +218,13 @@ A ordem das regras influencia diretamente o resultado final.
 Após a criação de uma Business Rule, é essencial validar o seu funcionamento antes de a colocar em produção.
 
 A validação pode ser realizada de duas formas distintas.
+
+ <p align="center">
+  
+  <img src="../images/glpi-business/14testrules.png" alt="Validação e Testes">
+    
+   </p>
+
 
 ---
 
@@ -171,7 +245,11 @@ Neste ecrã, o utilizador pode:
 - Verificar se a Business Rule é acionada  
 - Confirmar quais as ações aplicadas
 
-*(Inserir imagem do Test rules engine)*
+ <p align="center">
+  
+  <img src="../images/glpi-business/15testfinal.png" alt="Validação e Testes">
+    
+   </p>
 
 ---
 
@@ -184,4 +262,4 @@ A correta utilização das Business Rules permite:
 - Melhorar tempos de resposta  
 - Aumentar a eficiência operacional das equipas técnicas
 
-Uma abordagem bem estruturada e devidamente testada garante um sistema de ticketing mais fiável, escalável e alinhado com as boas práticas ITIL.
+Uma abordagem bem estruturada e devidamente testada garante um sistema de ticketing mais fiável, escalável e alinhado com as boas práticas de cibersegurança.
