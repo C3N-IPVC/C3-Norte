@@ -28,7 +28,7 @@ Cada Business Rule é composta por:
   
 <p align="center">
   
-  <img src="../images/glpi-business/Picture1.png" alt="Conceito de Business Rules no GLPI" width="900">
+  <img src="../images/glpi-business/1exemplo.png" alt="Conceito de Business Rules no GLPI" width="900">
   
 </p>
 
