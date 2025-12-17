@@ -25,6 +25,12 @@ Cada Business Rule é composta por:
 - Um ou mais critérios (condições)  
 - Uma ou mais ações  
 - Definição da permissão de uso por Sub-Entidades (opcional)
+  
+<p align="center">
+  
+  <img src="../images/glpi-business/Picture1.png" alt="Conceito de Business Rules no GLPI" width="900">
+  
+</p>
 
 ---
 
@@ -53,6 +59,13 @@ Neste menu é possível:
 - Editar regras existentes  
 - Ativar ou desativar regras  
 - Definir a ordem de avaliação das regras
+  
+<p align="center">
+  
+  <img src="../images/glpi-business/2menuticket.jpg" alt="Aceder ao Módulo de Business Rules" width="900">
+  
+</p>
+
 
 ---
 
