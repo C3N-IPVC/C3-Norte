@@ -1,6 +1,6 @@
 # Guideline — Inventário de Ativos no GLPI (Passo a Passo)
 
-Este documento descreve, de forma detalhada e sequencial, o processo de inventário de ativos no GLPI. O objetivo é permitir que qualquer colega consiga executar o inventário de forma autónoma, consistente e alinhada com as boas práticas do GLPI.
+Este documento descreve, de forma detalhada e sequencial, o processo de inventário de ativos no GLPI. O objetivo é permitir que qualquer utilizador consiga executar o inventário de forma autónoma, consistente e alinhada com as boas práticas do GLPI.
 
 ---
 
