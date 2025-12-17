@@ -138,7 +138,12 @@ Para criar ou gerir Ticket Templates, seguir o caminho:
 
 Neste ecrã é apresentada a lista de templates existentes, bem como a opção para criação de novos templates.
 
-AAAAAAAAA
+<p align="center">
+  
+  <img src="../images/glpi-SLA/5CreateTemplate.png" alt="Criação do Ticket Template" >
+  
+</p>
+
 
 Após selecionar **Add**, deve ser criado o template com um nome claro e identificativo (ex.: **Incidente Crítico CNCS**).
 
