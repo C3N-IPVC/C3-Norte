@@ -307,7 +307,7 @@ http://<ip_do_servidor>/
 
 No primeiro ecrã do assistente, seleciona o idioma pretendido e confirma para dar início ao processo de instalação.
 
-![Seleção do idioma no assistente de instalação](../images/glpi-installation/image.png)
+![Seleção do idioma no assistente de instalação](../images/glpi-installation/GlpiSetup.jpg)
 
 
 ### 11.2 Verificação de compatibilidade do ambiente 
