@@ -1,8 +1,6 @@
 
 # Guia de Configuração de Automação de Tickets no GLPI
 
-> **Nota:** Inserir imagem de capa ou visão geral do GLPI (menu principal).
-
 ---
 
 ## Enquadramento e Objetivo
@@ -17,11 +15,9 @@ O foco deste guia é explicar como a integração entre **Business Rules**, **IT
 
 A automação no GLPI baseia-se numa cadeia lógica bem definida:
 
-Business Rule → ITIL Category → Ticket Template → SLA / Fluxo
+**Business Rule → ITIL Category → Ticket Template → SLA / Fluxo**
 
 As **Business Rules** funcionam como *triggers*, atribuindo automaticamente a categoria correta ao ticket. A categoria já contém a associação ao **Ticket Template** e ao contexto ITIL adequado, permitindo que o fluxo seja seguido automaticamente.
-
-> **Nota para imagem:** Inserir diagrama simples do fluxo (Business Rule → ITIL Category → Ticket Template → SLA).
 
 ---
 
@@ -45,8 +41,7 @@ Após aceder ao menu **Setup → Service levels → SLAs**, deve ser criado um n
 
 Este ecrã apresenta a lista de SLAs existentes no sistema, permitindo criar novos acordos de nível de serviço ou editar os já definidos.
 
-> **Nota para imagem:** Screenshot da lista de SLAs com destaque no botão **Add**.
-
+aaaaaaaa
 ---
 
 ### Definição do SLA (Service Level)
@@ -189,13 +184,20 @@ Setup → Dropdowns → ITIL categories
 
 Neste ecrã é possível consultar a hierarquia existente e criar novas categorias.
 
+
+<p align="center">
+  
+  <img src="../images/glpi-inventario/9ITLCATEGORIES.png" alt="Configuração das ITIL Categories" >
+  
+</p>
+
 Após a categoria estar criada, deve ser associado o template correspondente:
 
 Template for an incident → Incidente Crítico CNCS
 
 Este é o passo que permite que, quando a categoria for atribuída ao ticket, o GLPI aplique automaticamente o Ticket Template definido.
 
-> **Nota para imagem:** Screenshot da criação da ITIL Category e do campo **Template for an incident**.
+
 
 ---
 
@@ -212,7 +214,6 @@ Estas ações fazem com que o ticket entre imediatamente no fluxo definido pela 
 
 A configuração detalhada das Business Rules encontra-se documentada no Guia de Configuração de Business Rules no GLPI, sendo este módulo apenas a sua integração no fluxo global.
 
-> **Nota para imagem:** Screenshot de uma Business Rule com ações de Category + SLA.
 
 ---
 
@@ -227,4 +228,4 @@ Após a entrada de um ticket:
 
 O processo ocorre sem necessidade de intervenção manual.
 
-> **Nota para imagem:** Diagrama final do fluxo automático completo.
+
