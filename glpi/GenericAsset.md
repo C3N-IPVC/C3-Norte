@@ -40,6 +40,7 @@ Este guia descreve o processo de criação e gestão de **Assets Genéricos ** n
   <img src="../images/glpi-generic/2exemplo.png" alt="Criar a Definição do Asset “Website”">
   
 </p>
+
 ---
 
 ## Passo 2 – Configurar os Campos (*Fields*)
@@ -129,4 +130,3 @@ Este modelo de Asset permite:
 - Exportação directa para entidades externas  
 - Escalabilidade para novos Websites ou serviços web
 
-Qualquer alteração à estrutura deverá ser validada pela equipa responsável pelo inventário ou segurança da informação.
