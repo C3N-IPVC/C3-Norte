@@ -2,10 +2,9 @@
 
 ## Enquadramento
 
-Este guia descreve o processo de criação e gestão de **Assets Genéricos do tipo Website** no **GLPI 11**, com o objetivo de garantir a inventariação consistente de serviços expostos à Internet, a normalização da informação e a conformidade com os requisitos da **CNCS / QNR**.
+Este guia descreve o processo de criação e gestão de **Assets Genéricos ** no **GLPI 11**, com o objetivo de garantir a inventariação consistente de serviços expostos à Internet, a normalização da informação e a conformidade com os requisitos da **CNCS / QNR**.
 
-Destina-se a equipas de **IT, Sistemas, Segurança da Informação ou Service Desk**, devendo ser seguido sempre que um novo Website ou serviço web seja colocado em produção.
-
+D
 ---
 
 ## Pré-requisitos
