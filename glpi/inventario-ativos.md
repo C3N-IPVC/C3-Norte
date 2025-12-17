@@ -13,20 +13,21 @@ Antes de iniciar qualquer processo de inventário automático, é essencial gara
 Aceder a `Administration > Entities` e confirmar que existe uma entidade principal e, se necessário, subentidades. As subentidades permitem separar ativos por departamentos, serviços ou localizações. Recomenda-se ativar a herança de dados quando aplicável.
 
 **Exemplo Prático**  
-📌 Inserir imagem aqui: Entidades (criação / hierarquia / herança)
+![Entidades](../images/glpi-inventario/inventario.png)
 
+\\\\\\\\\\![Entidades](../images/glpi-inventario/inventarioex.png)   
 ### 1.2 Localizações
 
 Em `Setup > Dropdowns > Locations`, criar uma hierarquia lógica de localizações (ex.: Campus > Edifício > Piso > Sala). Esta informação será utilizada para associar corretamente os ativos.
 
 **Exemplo Prático**  
-📌 Inserir imagem aqui: Localizações (criação / hierarquia)
+![Entidades](../images/glpi-inventario/localizacao.png)   
 
 ### 1.3 Redes (IP Networks)
 
 Em `Setup > Administration > GLPI Inventory > IP Ranges`, definir as gamas de IP que serão utilizadas nos scans de rede. Cada rede deve conter o endereço base e a máscara correta.
 
-📌 Inserir imagem aqui: IP Ranges (lista / criação)
+![Entidades](../images/glpi-inventario/iprange.jpg)   
 
 ---
 
@@ -38,7 +39,7 @@ Aceder a `Administration > Inventory` e confirmar que o inventário está ativo 
 
 **Nota:** É possível definir a entidade à qual o utilizador pretende definir os ativos.
 
-📌 Inserir imagem aqui: Inventory (módulo ativo / permissões / entidade)
+![Entidades](../images/glpi-inventario/inventariomenu.jpg)   
 
 ---
 
@@ -48,9 +49,10 @@ O GLPI Agent é o componente que executa localmente os scans e envia os resultad
 
 Instalar o agente no servidor GLPI ou noutra máquina da rede que tenha acesso às gamas de IP a inventariar. Após a instalação, confirmar no GLPI que o agente aparece registado e ativo.
 
-(Em caso de dúvidas, verificar documentação sobre instalação do Agente em ambiente Windows ou Linux.)
+>[!Warning]
+>Em caso de dúvidas, verificar aba sobre instalação do Agente em ambiente Windows ou Linux.
 
-📌 Inserir imagem aqui: serviço/agente (estado ativo / registo no GLPI)
+![Entidades](../images/glpi-inventario/agentglpi.png)  
 
 ---
 
