@@ -24,6 +24,7 @@ e modular:
 - [Guia de Instalação do GLPI](glpi/installation.md)
 - [Guia de Inventário de Ativos](glpi/inventario-ativos.md)
 - [Guia de Business Rules for Tickets](glpi/BusinessRules.md)
+- [Guia de Criação de Ativos](glpi/GenericAsset.md)
 - SLAs e Automatismos
 
 
