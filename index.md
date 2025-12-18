@@ -26,6 +26,7 @@ e modular:
 - [Guia de Business Rules for Tickets](glpi/BusinessRules.md)
 - [Guia de Criação de Ativos](glpi/GenericAsset.md)
 - [Guia de SLAs e Automatismos](glpi/SLAsAutomatismos.md)
+- [Guia de Instalação de Agentes de GLPI](glpi/glpiagents.md)
 
 
 ### Integrações (em desenvolvimento)
