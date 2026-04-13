@@ -47,3 +47,46 @@ Durante a instalação, poderão ser solicitadas as seguintes configurações:
 
 - Diretório de instalação (recomendado manter o padrão)
 - Arranque automático do serviço (recomendado: **Sim**)
+
+## 5. Configuração do URL do servidor GLPI
+
+Após a execução do comando de instalação, será solicitado que introduzas o URL do servidor GLPI (substituir pelo IP ou hostname do servidor):
+
+```bash
+http://<IP_ou_hostname>/front/inventory.php
+```
+
+> [!NOTE]
+> Se o GLPI estiver instalado numa pasta personalizada (ex: `/var/www/html/glpi/public`), ajusta o caminho conforme necessário.
+
+## 6. Verificação do serviço do GLPI Agent
+
+Verifica se o GLPI Agent está a correr como serviço:
+
+```bash
+sudo systemctl status glpi-agent
+```
+
+- **Active (running)** → o agente está a funcionar corretamente  
+- **Inactive/failed** → verificar logs com:
+
+```bash
+sudo journalctl -u glpi-agent -e
+```
+## 7. Forçar envio de inventário
+
+Para testar, podes forçar manualmente o agente a enviar o inventário para o servidor GLPI:
+
+```bash
+sudo glpi-agent --debug --server http://<IP_ou_hostname>/front/inventory.php --force
+```
+
+---
+
+## 8. Verificação no GLPI
+
+Acede ao interface web do GLPI.
+
+- Navega até **Assets > Computers**
+  - Deverás ver a máquina Ubuntu listada
+
