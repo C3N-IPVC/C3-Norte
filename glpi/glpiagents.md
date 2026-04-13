@@ -131,3 +131,138 @@ Seleciona o instalador adequado ao teu sistema:
 - Selecionar **Install as a Windows Service** (recomendado)  
 
 ![Modo Windows Service](../images/agent/service.png)
+
+## 2.4 Configuração do GLPI Agent (Windows)
+
+Durante o assistente de instalação, configura as opções conforme descrito abaixo.
+
+---
+
+### 2.4.1 Tipo de instalação
+
+Seleciona o modo:
+
+- **Complete** — instala todos os componentes do agente, garantindo suporte completo a inventário e funcionalidades adicionais.
+
+Este modo é recomendado para ambientes de produção.
+
+![Tipo de instalação](../images/agent/complete.png)
+
+---
+
+### 2.4.2 Target do servidor GLPI
+
+Define para onde o agente irá enviar o inventário:
+
+- **Local Target**: manter o valor por defeito  
+- **Remote Target**:
+
+```bash
+http://<IP_servidor>/front/inventory.php
+```
+
+Este URL corresponde ao endpoint do GLPI que recebe os dados de inventário.
+
+- Não ativar **Quick installation**, para permitir configuração completa.
+
+![Configuração do Target](../images/agent/target.png)
+
+---
+
+### 2.4.3 Opções de Proxy
+
+Estas opções permitem configurar um servidor proxy para comunicação.
+
+- Em ambientes normais, manter vazio  
+- Apenas configurar se a rede exigir proxy para acesso externo
+
+![Proxy](../images/agent/proxy.png)
+
+---
+
+### 2.4.4 Opções SSL
+
+Define parâmetros de segurança para ligações HTTPS:
+
+- Manter valores por defeito  
+- Não desativar verificação SSL (exceto em ambientes de teste)
+
+Esta opção garante comunicação segura com o servidor.
+
+![SSL](../images/agent/ssl.png)
+
+---
+
+### 2.4.5 Modo de execução
+
+Selecionar:
+
+- **As a Windows Service** — permite execução automática em segundo plano
+
+Ativar:
+
+- **Run inventory immediately after installation** — envia inventário logo após instalação  
+- **Install GLPI-AgentMonitor** — adiciona monitor na barra de sistema
+
+Isto garante funcionamento automático e monitorização fácil.
+
+![Modo de execução](../images/agent/service.png)
+
+---
+
+### 2.4.6 HTTP Server
+
+Permite ativar um servidor HTTP local no agente.
+
+- Manter configuração por defeito  
+- Normalmente não é necessário alterar
+
+![HTTP](../images/agent/http.png)
+
+---
+
+### 2.4.7 Opções diversas (Misc)
+
+Inclui opções adicionais de comportamento:
+
+- Scan de perfis de utilizador  
+- Inventário de software  
+- Formato de armazenamento local  
+
+Recomenda-se manter os valores por defeito.
+
+![Misc](../images/agent/misc.png)
+
+---
+
+### 2.4.8 Opções avançadas
+
+Parâmetros avançados como:
+
+- Timeouts  
+- Execução de tarefas  
+- Configurações específicas  
+
+Não alterar, salvo necessidade específica.
+
+![Advanced](../images/agent/advanced.png)
+
+---
+
+### 2.4.9 Instalação
+
+Após rever todas as configurações:
+
+- Clicar em **Install** para iniciar a instalação
+
+![Instalar](../images/agent/install.png)
+
+---
+
+### 2.4.10 Conclusão
+
+Finalizar o assistente após a instalação.
+
+O agente deverá iniciar automaticamente e enviar o primeiro inventário.
+
+![Conclusão](../images/agent/finish.png)
