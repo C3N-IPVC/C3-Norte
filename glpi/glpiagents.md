@@ -113,4 +113,21 @@ Faz o download da versão mais recente do GLPI Agent para Windows a partir das r
 Seleciona o instalador adequado ao teu sistema:
 
 - `glpi-agent-x.x-x64.msi` → sistemas 64 bits (mais comum)
-- `glpi-agent-x.x-x86.msi` → sistemas 32 bits
+- `glpi-agent-x.x-x86.msi` → sistemas 32 
+
+
+## 2.3 Instalação do GLPI Agent
+
+1. Executa o ficheiro `.msi` descarregado como Administrador.
+
+2. Segue o assistente de instalação:
+
+- Aceitar o contrato de licença  
+- Escolher o diretório de instalação (recomendado manter o padrão)  
+- Definir o IP/URL do servidor GLPI  
+
+![Configuração do servidor GLPI](../images/agent/target.png)
+
+- Selecionar **Install as a Windows Service** (recomendado)  
+
+![Modo Windows Service](../images/agent/service.png)
