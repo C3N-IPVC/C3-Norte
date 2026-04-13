@@ -7,7 +7,7 @@ Este guia descreve o processo de instalação e configuração do GLPI Agent em 
 
 # Linux (Ubuntu)
 
-## 2. Requisitos
+## 1.2 Requisitos
 
 - Servidor GLPI em funcionamento (testado com GLPI 10.x)
 - Inventário ativo:
@@ -19,7 +19,7 @@ Este guia descreve o processo de instalação e configuração do GLPI Agent em 
 
 ---
 
-## 3. Download do GLPI Agent
+## 1.3 Download do GLPI Agent
 
 Faz o download da versão mais recente do GLPI Agent para Linux a partir das releases oficiais no GitHub:
 
@@ -31,7 +31,7 @@ Faz o download da versão mais recente do GLPI Agent para Linux a partir das rel
 wget https://github.com/glpi-project/glpi-agent/releases/download/1.7/glpi-agent-1.7-linux-installer.pl
 
 ```
-## 4. Instalação do GLPI Agent
+## 1.4 Instalação do GLPI Agent
 
 Tornar o instalador executável e executá-lo com permissões de superutilizador:
 
@@ -48,7 +48,7 @@ Durante a instalação, poderão ser solicitadas as seguintes configurações:
 - Diretório de instalação (recomendado manter o padrão)
 - Arranque automático do serviço (recomendado: **Sim**)
 
-## 5. Configuração do URL do servidor GLPI
+## 1.5 Configuração do URL do servidor GLPI
 
 Após a execução do comando de instalação, será solicitado que introduzas o URL do servidor GLPI (substituir pelo IP ou hostname do servidor):
 
@@ -59,7 +59,7 @@ http://<IP_ou_hostname>/front/inventory.php
 > [!NOTE]
 > Se o GLPI estiver instalado numa pasta personalizada (ex: `/var/www/html/glpi/public`), ajusta o caminho conforme necessário.
 
-## 6. Verificação do serviço do GLPI Agent
+## 1.6 Verificação do serviço do GLPI Agent
 
 Verifica se o GLPI Agent está a correr como serviço:
 
@@ -73,7 +73,7 @@ sudo systemctl status glpi-agent
 ```bash
 sudo journalctl -u glpi-agent -e
 ```
-## 7. Forçar envio de inventário
+## 1.7 Forçar envio de inventário
 
 Para testar, podes forçar manualmente o agente a enviar o inventário para o servidor GLPI:
 
@@ -83,10 +83,34 @@ sudo glpi-agent --debug --server http://<IP_ou_hostname>/front/inventory.php --f
 
 ---
 
-## 8. Verificação no GLPI
+## 1.8 Verificação no GLPI
 
 Acede ao interface web do GLPI.
 
 - Navega até **Assets > Computers**
   - Deverás ver a máquina Ubuntu listada
 
+# Windows
+
+## 2.1 Requisitos
+
+- Servidor GLPI em funcionamento (testado com GLPI 10.x)
+- Máquina Windows (Servidor ou Desktop)
+  - Permissões de Administrador local
+  - Conectividade de rede entre o agente e o servidor
+
+---
+
+## 2.2 Download do GLPI Agent
+
+Faz o download da versão mais recente do GLPI Agent para Windows a partir das releases oficiais:
+
+[Ver releases do GLPI Agent](https://github.com/glpi-project/glpi-agent/releases)
+
+> [!NOTE]
+> Confirma sempre se estás a utilizar a versão mais recente disponível no repositório oficial.
+
+Seleciona o instalador adequado ao teu sistema:
+
+- `glpi-agent-x.x-x64.msi` → sistemas 64 bits (mais comum)
+- `glpi-agent-x.x-x86.msi` → sistemas 32 bits
