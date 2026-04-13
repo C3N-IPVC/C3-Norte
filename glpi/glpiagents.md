@@ -126,12 +126,6 @@ Seleciona o instalador adequado ao teu sistema:
 - Escolher o diretório de instalação (recomendado manter o padrão)  
 - Definir o IP/URL do servidor GLPI  
 
-![Configuração do servidor GLPI](../images/agent/target.png)
-
-- Selecionar **Install as a Windows Service** (recomendado)  
-
-![Modo Windows Service](../images/agent/service.png)
-
 ## 2.4 Configuração do GLPI Agent (Windows)
 
 Durante o assistente de instalação, configura as opções conforme descrito abaixo.
