@@ -23,7 +23,7 @@ Este guia descreve o processo de instalação e configuração do GLPI Agent em 
 
 Faz o download da versão mais recente do GLPI Agent para Linux a partir das releases oficiais no GitHub:
 
->[!WARNING]
+>[!Note]
 > Confirma sempre se estás a utilizar a versão mais recente disponível no repositório oficial.
 > https://github.com/glpi-project/glpi-agent/releases
 
