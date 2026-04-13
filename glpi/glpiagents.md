@@ -29,3 +29,21 @@ Faz o download da versão mais recente do GLPI Agent para Linux a partir das rel
 
 ```bash
 wget https://github.com/glpi-project/glpi-agent/releases/download/1.7/glpi-agent-1.7-linux-installer.pl
+
+```
+## 4. Instalação do GLPI Agent
+
+Tornar o instalador executável e executá-lo com permissões de superutilizador:
+
+```bash
+chmod +x glpi-agent-1.7-linux-installer.pl
+sudo perl glpi-agent-1.7-linux-installer.pl --type=all
+```
+
+> [!NOTE]
+> Se pretenderes instalar apenas o módulo de inventário, remove a opção `--type=all`.
+
+Durante a instalação, poderão ser solicitadas as seguintes configurações:
+
+- Diretório de instalação (recomendado manter o padrão)
+- Arranque automático do serviço (recomendado: **Sim**)
