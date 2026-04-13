@@ -146,7 +146,7 @@ Seleciona o modo:
 
 Este modo é recomendado para ambientes de produção.
 
-![Tipo de instalação](../images/agent/complete.png)
+![Tipo de instalação](../images/agent/glpi-agent/glpi.complete.0.png)
 
 ---
 
@@ -255,7 +255,7 @@ Após rever todas as configurações:
 
 - Clicar em **Install** para iniciar a instalação
 
-![Instalar](../images/agent/install.png)
+![Instalar](../images/glpi-agent/)
 
 ---
 
