@@ -146,7 +146,7 @@ Seleciona o modo:
 
 Este modo é recomendado para ambientes de produção.
 
-![Tipo de instalação](../images/agent/glpi-agent/glpi.complete.0.png)
+![Tipo de instalação](../images/glpi-agent/glpi.complete.0.png)
 
 ---
 
@@ -165,7 +165,7 @@ Este URL corresponde ao endpoint do GLPI que recebe os dados de inventário.
 
 - Não ativar **Quick installation**, para permitir configuração completa.
 
-![Configuração do Target](../images/agent/target.png)
+![Target](../images/glpi-agent/glpi.setTarget.1.png)
 
 ---
 
@@ -176,7 +176,7 @@ Estas opções permitem configurar um servidor proxy para comunicação.
 - Em ambientes normais, manter vazio  
 - Apenas configurar se a rede exigir proxy para acesso externo
 
-![Proxy](../images/agent/proxy.png)
+![Proxy](../images/glpi-agent/glpi.Proxy.3.png)
 
 ---
 
@@ -189,7 +189,7 @@ Define parâmetros de segurança para ligações HTTPS:
 
 Esta opção garante comunicação segura com o servidor.
 
-![SSL](../images/agent/ssl.png)
+![SSL](../images/glpi-agent/glpi.setSSL.2.png)
 
 ---
 
@@ -206,7 +206,7 @@ Ativar:
 
 Isto garante funcionamento automático e monitorização fácil.
 
-![Modo de execução](../images/agent/service.png)
+![Settings](../images/glpi-agent/glpi.settings.4.png)
 
 ---
 
@@ -217,7 +217,7 @@ Permite ativar um servidor HTTP local no agente.
 - Manter configuração por defeito  
 - Normalmente não é necessário alterar
 
-![HTTP](../images/agent/http.png)
+![HTTP](../images/glpi-agent/glpi.settingsHTTP.5.png)
 
 ---
 
@@ -231,7 +231,7 @@ Inclui opções adicionais de comportamento:
 
 Recomenda-se manter os valores por defeito.
 
-![Misc](../images/agent/misc.png)
+![Misc](../images/glpi-agent/glpi.settingsMISC.6.png)
 
 ---
 
@@ -245,7 +245,7 @@ Parâmetros avançados como:
 
 Não alterar, salvo necessidade específica.
 
-![Advanced](../images/agent/advanced.png)
+![Advanced](../images/glpi-agent/glpi.Timer.7.png)
 
 ---
 
@@ -255,7 +255,7 @@ Após rever todas as configurações:
 
 - Clicar em **Install** para iniciar a instalação
 
-![Instalar](../images/glpi-agent/)
+![Install](../images/glpi-agent/Glpi.Logs.8.png)
 
 ---
 
@@ -265,4 +265,4 @@ Finalizar o assistente após a instalação.
 
 O agente deverá iniciar automaticamente e enviar o primeiro inventário.
 
-![Conclusão](../images/agent/finish.png)
+![Finish](../images/glpi-agent/glpi.Finish.8.png) 
