@@ -1,7 +1,7 @@
 # Guia de Instalação e Configuração do GLPI Agent
 
 ## 1. Introdução
-Este guia descreve o processo de instalação e configuração do GLPI Agent em sistemas Linux (Ubuntu) e Windows, permitindo a comunicação de inventário com o servidor GLPI.
+Este guia descreve o processo de instalação e configuração do GLPI Agent em sistemas Linux (Ubuntu) e Windows, permitindo a recolha e envio automático de informação de inventário para o servidor GLPI.
 
 ---
 
@@ -23,14 +23,16 @@ Este guia descreve o processo de instalação e configuração do GLPI Agent em 
 
 Faz o download da versão mais recente do GLPI Agent para Linux a partir das releases oficiais no GitHub:
 
->[!Warning]
-> Confirma sempre se estás a utilizar a versão mais recente disponível no repositório oficial.
+> [!WARNING]
+> Confirma sempre se estás a utilizar a versão mais recente disponível no repositório oficial.  
 > https://github.com/glpi-project/glpi-agent/releases
 
 ```bash
 wget https://github.com/glpi-project/glpi-agent/releases/download/1.7/glpi-agent-1.7-linux-installer.pl
-
 ```
+
+---
+
 ## 1.4 Instalação do GLPI Agent
 
 Tornar o instalador executável e executá-lo com permissões de superutilizador:
@@ -48,6 +50,8 @@ Durante a instalação, poderão ser solicitadas as seguintes configurações:
 - Diretório de instalação (recomendado manter o padrão)
 - Arranque automático do serviço (recomendado: **Sim**)
 
+---
+
 ## 1.5 Configuração do URL do servidor GLPI
 
 Após a execução do comando de instalação, será solicitado que introduzas o URL do servidor GLPI (substituir pelo IP ou hostname do servidor):
@@ -58,6 +62,8 @@ http://<IP_ou_hostname>/front/inventory.php
 
 > [!NOTE]
 > Se o GLPI estiver instalado numa pasta personalizada (ex: `/var/www/html/glpi/public`), ajusta o caminho conforme necessário.
+
+---
 
 ## 1.6 Verificação do serviço do GLPI Agent
 
@@ -73,6 +79,9 @@ sudo systemctl status glpi-agent
 ```bash
 sudo journalctl -u glpi-agent -e
 ```
+
+---
+
 ## 1.7 Forçar envio de inventário
 
 Para testar, podes forçar manualmente o agente a enviar o inventário para o servidor GLPI:
@@ -89,6 +98,8 @@ Acede ao interface web do GLPI.
 
 - Navega até **Assets > Computers**
   - Deverás ver a máquina Ubuntu listada
+
+---
 
 # Windows
 
@@ -113,8 +124,9 @@ Faz o download da versão mais recente do GLPI Agent para Windows a partir das r
 Seleciona o instalador adequado ao teu sistema:
 
 - `glpi-agent-x.x-x64.msi` → sistemas 64 bits (mais comum)
-- `glpi-agent-x.x-x86.msi` → sistemas 32 
+- `glpi-agent-x.x-x86.msi` → sistemas 32 bits
 
+---
 
 ## 2.3 Instalação do GLPI Agent
 
@@ -125,6 +137,8 @@ Seleciona o instalador adequado ao teu sistema:
 - Aceitar o contrato de licença  
 - Escolher o diretório de instalação (recomendado manter o padrão)  
 - Definir o IP/URL do servidor GLPI  
+
+---
 
 ## 2.4 Configuração do GLPI Agent (Windows)
 
@@ -143,7 +157,6 @@ Este modo é recomendado para ambientes de produção.
 <p align="center">
   <img src="../images/glpi-agent/glpi.complete.0.png" width="700"/>
 </p>
-
 
 ---
 
@@ -194,7 +207,6 @@ Esta opção garante comunicação segura com o servidor.
   <img src="../images/glpi-agent/glpi.setSSL.2.png" width="700"/>
 </p>
 
-
 ---
 
 ### 2.4.5 Modo de execução
@@ -226,7 +238,6 @@ Permite ativar um servidor HTTP local no agente.
 <p align="center">
   <img src="../images/glpi-agent/glpi.settingsHTTP.5.png" width="700"/>
 </p>
-
 
 ---
 
@@ -271,6 +282,7 @@ Após rever todas as configurações:
 <p align="center">
   <img src="../images/glpi-agent/Glpi.Logs.8.png" width="700"/>
 </p>
+
 ---
 
 ### 2.4.10 Conclusão
@@ -290,3 +302,13 @@ O agente deverá iniciar automaticamente e enviar o primeiro inventário.
 > Caso contrário, o inventário não será enviado automaticamente para o servidor.
 
 ---
+
+## 2.5 Validação da Instalação
+
+Após a configuração do GLPI Agent, deve ser validado:
+
+- Comunicação com o servidor GLPI  
+- Envio correto do inventário  
+- Presença do equipamento em **Assets > Computers**  
+
+Esta validação garante o correto funcionamento do sistema de inventário e a integração com a plataforma GLPI.
