@@ -77,6 +77,8 @@ Permite exportar informação de ativos e itens.
   <img src="../images/glpi-plugins/image.png" alt="Plugins GLPI" width="700"/>
 </p>
 
+> [!WARNING]
+> Após selecionar um plugin no **Marketplace**, é necessário clicar em **Install** e posteriormente em **Activate** para que o plugin fique operacional no GLPI.
 ---
 
 ##  Contributo para a NIS2
