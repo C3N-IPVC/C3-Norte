@@ -22,6 +22,7 @@ e modular:
 
 ### GLPI
 - [Guia de Instalação do GLPI](glpi/installation.md)
+- [Guia de Instalação de Plugins](glpi/Plugins.md)
 - [Guia de Inventário de Ativos](glpi/inventario-ativos.md)
 - [Guia de Business Rules for Tickets](glpi/BusinessRules.md)
 - [Guia de Criação de Ativos](glpi/GenericAsset.md)
