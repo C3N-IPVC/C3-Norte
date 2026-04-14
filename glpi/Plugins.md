@@ -1,8 +1,4 @@
-# 🔌 Plugins Recomendados para Conformidade NIS2
-
----
-
-## 📌 Introdução
+# Plugins Recomendados para Conformidade NIS2
 
 A diretiva NIS2 estabelece requisitos rigorosos ao nível da gestão de ativos, controlo de informação e capacidade de resposta a incidentes.
 
@@ -15,9 +11,9 @@ Neste contexto, o GLPI pode ser complementado com plugins que aumentam significa
 
 ---
 
-## 🧩 Plugins Recomendados
+## Plugins Recomendados
 
-### 📥 Data Injection
+### Data Injection
 
 Permite importar dados em massa para o GLPI.
 
@@ -32,7 +28,7 @@ Permite importar dados em massa para o GLPI.
 
 ---
 
-### 🔢 Inventory Number Generation
+### Inventory Number Generation
 
 Gera automaticamente identificadores únicos para ativos.
 
@@ -46,7 +42,7 @@ Gera automaticamente identificadores únicos para ativos.
 
 ---
 
-### 🖥️ GLPI Inventory
+### GLPI Inventory
 
 Plugin essencial para recolha automática de informação dos equipamentos.
 
@@ -61,7 +57,7 @@ Plugin essencial para recolha automática de informação dos equipamentos.
 
 ---
 
-### 📤 Used Items Export
+###  Used Items Export
 
 Permite exportar informação de ativos e itens.
 
@@ -75,7 +71,7 @@ Permite exportar informação de ativos e itens.
 
 ---
 
-## 🖼️ Interface de Plugins no GLPI
+##  Interface de Plugins no GLPI
 
 <p align="center">
   <img src="../images/glpi-plugins/plugins.png" alt="Plugins GLPI" width="700"/>
@@ -83,7 +79,7 @@ Permite exportar informação de ativos e itens.
 
 ---
 
-## 🛡️ Contributo para a NIS2
+##  Contributo para a NIS2
 
 A utilização destes plugins permite cumprir vários princípios da NIS2:
 
@@ -93,7 +89,5 @@ A utilização destes plugins permite cumprir vários princípios da NIS2:
 - **Auditoria** → capacidade de gerar relatórios e evidências  
 
 ---
-
-## ✅ Conclusão
 
 A integração destes plugins no GLPI reforça a capacidade da organização em cumprir os requisitos da diretiva NIS2, garantindo maior controlo, segurança e visibilidade sobre os seus ativos tecnológicos.
