@@ -11,6 +11,32 @@ Neste contexto, o GLPI pode ser complementado com plugins que aumentam significa
 
 ---
 
+## 🔌 Instalação de Plugins no GLPI
+
+Antes de instalar plugins, é necessário obter acesso ao Marketplace do GLPI.
+
+### 🔑 Obter chave de acesso (GLPI Network)
+
+1. Aceder ao seguinte link:  
+   https://services.glpi-network.com/registration  
+
+2. Criar conta ou efetuar login  
+3. Gerar uma **API Key**  
+
+---
+
+### ⚙️ Inserir chave no GLPI
+
+No GLPI:
+
+- Ir a **Setup > Plugins**  
+- Aceder ao separador **Marketplace**  
+- Inserir a **API Key** obtida anteriormente  
+
+Após inserir a chave, será possível pesquisar e instalar plugins diretamente pela interface.
+
+---
+
 ## Plugins Recomendados
 
 ### Data Injection
@@ -57,7 +83,7 @@ Plugin essencial para recolha automática de informação dos equipamentos.
 
 ---
 
-###  Used Items Export
+### Used Items Export
 
 Permite exportar informação de ativos e itens.
 
@@ -71,7 +97,7 @@ Permite exportar informação de ativos e itens.
 
 ---
 
-##  Interface de Plugins no GLPI
+## Interface de Plugins no GLPI
 
 <p align="center">
   <img src="../images/glpi-plugins/image.png" alt="Plugins GLPI" width="700"/>
@@ -79,9 +105,10 @@ Permite exportar informação de ativos e itens.
 
 > [!WARNING]
 > Após selecionar um plugin no **Marketplace**, é necessário clicar em **Install** e posteriormente em **Activate** para que o plugin fique operacional no GLPI.
+
 ---
 
-##  Contributo para a NIS2
+## Contributo para a NIS2
 
 A utilização destes plugins permite cumprir vários princípios da NIS2:
 
