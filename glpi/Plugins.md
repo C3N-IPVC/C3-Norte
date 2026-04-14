@@ -74,7 +74,7 @@ Permite exportar informação de ativos e itens.
 ##  Interface de Plugins no GLPI
 
 <p align="center">
-  <img src="../images/glpi-plugins/plugins.png" alt="Plugins GLPI" width="700"/>
+  <img src="../images/glpi-plugins/image.png" alt="Plugins GLPI" width="700"/>
 </p>
 
 ---
