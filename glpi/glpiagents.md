@@ -140,7 +140,10 @@ Seleciona o modo:
 
 Este modo é recomendado para ambientes de produção.
 
-![Tipo de instalação](../images/glpi-agent/glpi.complete.0.png)
+<p align="center">
+  <img src="../images/glpi-agent/glpi.complete.0.png" width="700"/>
+</p>
+
 
 ---
 
@@ -159,7 +162,9 @@ Este URL corresponde ao endpoint do GLPI que recebe os dados de inventário.
 
 - Não ativar **Quick installation**, para permitir configuração completa.
 
-![Target](../images/glpi-agent/glpi.setTarget.1.png)
+<p align="center">
+  <img src="../images/glpi-agent/glpi.setTarget.1.png" width="700"/>
+</p>
 
 ---
 
@@ -170,7 +175,9 @@ Estas opções permitem configurar um servidor proxy para comunicação.
 - Em ambientes normais, manter vazio  
 - Apenas configurar se a rede exigir proxy para acesso externo
 
-![Proxy](../images/glpi-agent/glpi.Proxy.3.png)
+<p align="center">
+  <img src="../images/glpi-agent/glpi.Proxy.3.png" width="700"/>
+</p>
 
 ---
 
@@ -183,7 +190,10 @@ Define parâmetros de segurança para ligações HTTPS:
 
 Esta opção garante comunicação segura com o servidor.
 
-![SSL](../images/glpi-agent/glpi.setSSL.2.png)
+<p align="center">
+  <img src="../images/glpi-agent/glpi.setSSL.2.png" width="700"/>
+</p>
+
 
 ---
 
@@ -200,7 +210,9 @@ Ativar:
 
 Isto garante funcionamento automático e monitorização fácil.
 
-![Settings](../images/glpi-agent/glpi.settings.4.png)
+<p align="center">
+  <img src="../images/glpi-agent/glpi.settings.4.png" width="700"/>
+</p>
 
 ---
 
@@ -211,7 +223,10 @@ Permite ativar um servidor HTTP local no agente.
 - Manter configuração por defeito  
 - Normalmente não é necessário alterar
 
-![HTTP](../images/glpi-agent/glpi.settingsHTTP.5.png)
+<p align="center">
+  <img src="../images/glpi-agent/glpi.settingsHTTP.5.png" width="700"/>
+</p>
+
 
 ---
 
@@ -225,7 +240,9 @@ Inclui opções adicionais de comportamento:
 
 Recomenda-se manter os valores por defeito.
 
-![Misc](../images/glpi-agent/glpi.settingsMISC.6.png)
+<p align="center">
+  <img src="../images/glpi-agent/glpi.settingsMISC.6.png" width="700"/>
+</p>
 
 ---
 
@@ -239,7 +256,9 @@ Parâmetros avançados como:
 
 Não alterar, salvo necessidade específica.
 
-![Advanced](../images/glpi-agent/glpi.Timer.7.png)
+<p align="center">
+  <img src="../images/glpi-agent/glpi.Timer.7.png" width="700"/>
+</p>
 
 ---
 
@@ -249,8 +268,9 @@ Após rever todas as configurações:
 
 - Clicar em **Install** para iniciar a instalação
 
-![Install](../images/glpi-agent/Glpi.Logs.8.png)
-
+<p align="center">
+  <img src="../images/glpi-agent/Glpi.Logs.8.png" width="700"/>
+</p>
 ---
 
 ### 2.4.10 Conclusão
@@ -259,4 +279,14 @@ Finalizar o assistente após a instalação.
 
 O agente deverá iniciar automaticamente e enviar o primeiro inventário.
 
-![Finish](../images/glpi-agent/glpi.Finish.8.png) 
+<p align="center">
+  <img src="../images/glpi-agent/glpi.Finish.8.png" width="700"/>
+</p>
+
+---
+
+> [!WARNING]
+> Após a instalação, garantir que o serviço **GLPI Agent** está ativo.  
+> Caso contrário, o inventário não será enviado automaticamente para o servidor.
+
+---
