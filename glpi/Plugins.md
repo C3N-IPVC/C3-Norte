@@ -2,7 +2,7 @@
 
 A diretiva NIS2 estabelece requisitos rigorosos ao nível da gestão de ativos, controlo de informação e capacidade de resposta a incidentes.
 
-Neste contexto, o GLPI pode ser complementado com plugins que aumentam significativamente as suas capacidades, permitindo garantir:
+Neste contexto, o GLPI pode ser complementado com plugins que aumentam significativamente as suas capacidades, permitindo garantir a conformidade com os requisitos de segurança e gestão definidos pela diretiva NIS2.
 
 - Inventário atualizado e centralizado  
 - Rastreabilidade de ativos  
@@ -27,6 +27,7 @@ Antes de instalar plugins, é necessário obter acesso ao Marketplace do GLPI.
   <img src="../images/glpi-plugins/image2.png" alt="GLPI Network Registration" width="700"/>
 </p>
 
+A chave gerada permite autenticar o GLPI junto da plataforma GLPI Network, sendo necessária para aceder ao Marketplace e gerir plugins.
 
 ---
 
@@ -110,6 +111,8 @@ Permite exportar informação de ativos e itens.
 
 > [!WARNING]
 > Após selecionar um plugin no **Marketplace**, é necessário clicar em **Install** e posteriormente em **Activate** para que o plugin fique operacional no GLPI.
+>
+> Caso contrário, o plugin ficará instalado mas não ativo, não produzindo qualquer efeito no sistema.
 
 ---
 
@@ -124,4 +127,15 @@ A utilização destes plugins permite cumprir vários princípios da NIS2:
 
 ---
 
-A integração destes plugins no GLPI reforça a capacidade da organização em cumprir os requisitos da diretiva NIS2, garantindo maior controlo, segurança e visibilidade sobre os seus ativos tecnológicos.
+## Relação com requisitos da NIS2
+
+| Requisito NIS2 | Funcionalidade GLPI |
+|---------------|--------------------|
+| Gestão de ativos | GLPI Inventory |
+| Integridade de dados | Data Injection |
+| Rastreabilidade | Inventory Number Generation |
+| Auditoria e reporting | Used Items Export |
+
+---
+
+A integração destes plugins no GLPI reforça a capacidade da organização em cumprir os requisitos da diretiva NIS2, garantindo maior controlo, segurança e visibilidade sobre os seus ativos tecnológicos, bem como suporte a processos de auditoria e gestão de risco.****
