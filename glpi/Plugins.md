@@ -138,4 +138,4 @@ A utilização destes plugins permite cumprir vários princípios da NIS2:
 
 ---
 
-A integração destes plugins no GLPI reforça a capacidade da organização em cumprir os requisitos da diretiva NIS2, garantindo maior controlo, segurança e visibilidade sobre os seus ativos tecnológicos, bem como suporte a processos de auditoria e gestão de risco.****
+****A integração destes plugins no GLPI reforça a capacidade da organização em cumprir os requisitos da diretiva NIS2, garantindo maior controlo, segurança e visibilidade sobre os seus ativos tecnológicos, bem como suporte a processos de auditoria e gestão de risco.****
