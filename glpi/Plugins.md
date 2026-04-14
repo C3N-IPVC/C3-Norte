@@ -11,7 +11,7 @@ Neste contexto, o GLPI pode ser complementado com plugins que aumentam significa
 
 ---
 
-## 🔌 Instalação de Plugins no GLPI
+## Instalação de Plugins no GLPI
 
 Antes de instalar plugins, é necessário obter acesso ao Marketplace do GLPI.
 
@@ -22,6 +22,11 @@ Antes de instalar plugins, é necessário obter acesso ao Marketplace do GLPI.
 
 2. Criar conta ou efetuar login  
 3. Gerar uma **API Key**  
+
+<p align="center">
+  <img src="../images/glpi-plugins/image2.png" alt="GLPI Network Registration" width="700"/>
+</p>
+
 
 ---
 
