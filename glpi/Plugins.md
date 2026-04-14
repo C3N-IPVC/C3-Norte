@@ -15,7 +15,7 @@ Neste contexto, o GLPI pode ser complementado com plugins que aumentam significa
 
 Antes de instalar plugins, é necessário obter acesso ao Marketplace do GLPI.
 
-### 🔑 Obter chave de acesso (GLPI Network)
+### Obter chave de acesso (GLPI Network)
 
 1. Aceder ao seguinte link:  
    https://services.glpi-network.com/registration  
@@ -25,7 +25,7 @@ Antes de instalar plugins, é necessário obter acesso ao Marketplace do GLPI.
 
 ---
 
-### ⚙️ Inserir chave no GLPI
+### Inserir chave no GLPI
 
 No GLPI:
 
