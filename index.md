@@ -34,8 +34,10 @@ e modular:
 - [Guia de Integração Zabbix-GLPI (Alertas de Problemas em Tickets)](zabbix/IntegracaoGLPI.md)
 
   
+### Wazuh
+- [Guia de Integração Wazuh-GLPI (Alertas de Segurança em Tickets)](wazuh/IntegracaoGLPI.md)
+ 
 ### Integrações (em desenvolvimento)
-- Wazuh (SIEM / HIDS)
 - Outras integrações futuras
 
 ---
