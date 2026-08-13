@@ -155,7 +155,7 @@ Para que os problemas detetados sejam efetivamente enviados para o GLPI, é nece
 ## 6. Notas Importantes
 - A **API v1 (Legacy)** está marcada como depreciada pela Zabbix; para novas integrações deve ser utilizada a **API v2 (OAuth2)**, sempre que a versão do GLPI o permita (GLPI 11+)
 - Não aumentar o **Retry count** do media type, sob risco de criação de tickets duplicados
-- Manter as credenciais (Client Secret, App Token, User Token) em local seguro, idealmente num gestor de segredos
+- Manter as credenciais (Client Secret, App Token, User Token) em local seguro.
 
 ---
 
