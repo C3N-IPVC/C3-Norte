@@ -30,9 +30,12 @@ e modular:
 - [Guia de Instalação de Agentes de GLPI](glpi/glpiagents.md)
 
 
+### Zabbix
+- [Guia de Integração Zabbix-GLPI (Alertas de Problemas em Tickets)](zabbix/IntegracaoGLPI.md)
+
+  
 ### Integrações (em desenvolvimento)
 - Wazuh (SIEM / HIDS)
-- Zabbix (Monitorização)
 - Outras integrações futuras
 
 ---
