@@ -35,7 +35,7 @@ e modular:
 
   
 ### Wazuh
-- [Guia de Integração Wazuh-GLPI (Alertas de Segurança em Tickets)](wazuh/IntegracaoGLPI.md)
+- [Guia de Integração Wazuh-GLPI (Alertas de Segurança em Tickets)](wazuh/IntegracaoGLPI_2.md)
  
 ### Integrações (em desenvolvimento)
 - Outras integrações futuras
